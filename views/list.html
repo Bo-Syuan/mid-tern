@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block title %}Posts{% endblock %}
+
+{% block content %}
+  <h1>Posts</h1>
+  <p>You have <strong>{{ posts.length }}</strong> posts!</p>
+  <p><a href="/post/new">Create a Post</a></p>
+  <ul id="posts">
+    {% for post in posts %}
+      <li>
+        <h2>{{ post.title }}</h2>
+        <p><a href="/post/{{ post.id }}">Read post</a></p>
+      </li>
+	    
+<html>
+<body background="http://p1.pichost.me/640/15/1380204.jpg">
+<center> 
+<table>
+
+<tr>
+<th></th>
+<th>介紹</th>
+</tr>
+<tr>
+<th>名字</th>
+<td>王博萱</td>
+</tr>
+<tr>
+<th>學號</th>
+<td>110110619</td>
+</tr>
+</table>
+<embed src="https://www.youtube.com/v/watch?v=LzHFD1sEqpE" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed>
+</center>
+
+<div style="text-align:center;">
+　<div style="margin:0 auto;">
+
+<img src="https://pbs.twimg.com/profile_images/2328696305/image.jpg">
+</div>
+</div>
+</body>
+</html>
+
+    {% endfor %}
+  </ul>
+{% endblock %}
